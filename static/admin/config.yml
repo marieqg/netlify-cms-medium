@@ -1,0 +1,17 @@
+//static/admin/config.yml
+backend:
+name: github
+repo: marieqg/netlify-cms-medium
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name: blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: image, label: Image, widget: image }
+      - { name: body, label: Body, widget: markdown }
