@@ -1,11 +1,12 @@
-//static/admin/config.yml
 backend:
-name: github
-repo: marieqg/netlify-cms-medium
+  name: github
+  repo: marieqg/netlify-cms-medium
+
 media_folder: static/assets
 public_folder: assets
 collections:
   - name: blog
+    label: Blog
     folder: content/blog
     create: true
     fields:
